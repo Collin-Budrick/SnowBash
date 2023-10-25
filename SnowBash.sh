@@ -3,7 +3,7 @@
 shopt -s expand_aliases
 shopt -s nocasematch
 
-source /home/g02613s/AIX-MENU/menu-v2/api-functions.sh
+source ~/functions.sh
 
 alias rrsh='rosh -l root -n '
 

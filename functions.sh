@@ -3,11 +3,11 @@
 shopt -s expand_aliases
 shopt -s nocasematch
 
-alias get='curl -s -k --netrc-file /home/g02613s/AIX-MENU/menu-v2/secrets.txt -H "Content-Type: application/json" -H "Accept: application/json"'
+alias get='curl -s -k --netrc-file ~/.secrets.txt -H "Content-Type: application/json" -H "Accept: application/json"'
 
-alias modify='curl -s -k -X PATCH --netrc-file /home/g02613s/AIX-MENU/menu-v2/secrets.txt -H "Content-Type: application/json" -H "Accept: application/json" -d'
+alias modify='curl -s -k -X PATCH --netrc-file ~/.secrets.txt -H "Content-Type: application/json" -H "Accept: application/json" -d'
 
-alias create='curl -s -k -X POST --netrc-file /home/g02613s/AIX-MENU/menu-v2/secrets.txt -H "Content-Type: application/json" -H "Accept: application/json" -d'
+alias create='curl -s -k -X POST --netrc-file ~/.secrets.txt -H "Content-Type: application/json" -H "Accept: application/json" -d'
 
 # Library Functions for script integration:
 function SnowLink {
